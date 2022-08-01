@@ -79,6 +79,34 @@ a{text-decoration: none;}
     color: var(--red);
 }
 
+.booking {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding-top: 24px;
+    cursor: pointer;
+    position: fixed;
+    text-align: center;
+    z-index: 1000;
+    border-radius: 10px;
+    bottom: 0;
+    right: 0;
+    width: 84px;
+    height: 64px;
+    background-color: var(--red);
+}
+
+.booking:hover {
+    background-color: var(--dark_red);
+}
+
+.booking__title {
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 14px;
+    color: var(--white);
+}
+
 .main {
     position: relative;
     margin-bottom: 75px;
@@ -115,7 +143,7 @@ a{text-decoration: none;}
 	justify-content: center;
 }
 
-.main__item-content_title {
+.main__item-title {
     padding-bottom: 40px;
     font-family: IBM Plex serif;
     text-align: center;
@@ -125,7 +153,7 @@ a{text-decoration: none;}
     color: var(--white);
 }
 
-.main__item-content_text {
+.main__item-text {
     padding-bottom: 40px;
     font-family: Roboto;
     text-align: center;
@@ -135,7 +163,7 @@ a{text-decoration: none;}
     color: var(--white);
 }
 
-.main__item-content_button {
+.main__item-button {
     border-radius: 10px;
     border: none;
     padding: 16px 118px;
@@ -145,8 +173,8 @@ a{text-decoration: none;}
     font-size: 20px;
 }
 
-.main__item-content_button:hover,
-.main__item-content_button:active {
+.main__item-button:hover,
+.main__item-button:active {
     background-color: var(--dark_red);
     color: var(--white);
 }
@@ -210,7 +238,7 @@ a{text-decoration: none;}
     padding-top: 30px;
 }
 
-.stock__block-content_title {
+.stock__block-title {
     padding-bottom: 30px;
     font-family: IBM Plex serif;
     font-weight: 500;
@@ -219,7 +247,7 @@ a{text-decoration: none;}
     color: var(--white);
 }
 
-.stock__block-content_text {
+.stock__block-text {
     padding-bottom: 50px;
     font-family: Roboto;
     line-height: 1.1;
@@ -227,7 +255,7 @@ a{text-decoration: none;}
     color: var(--light_gray);
 }
 
-.stock__block-content_button {
+.stock__block-button {
     margin-right: 22px;
     border-radius: 10px;
     border: none;
@@ -238,17 +266,17 @@ a{text-decoration: none;}
     color: var(--white);
 }
 
-.stock__block-content_button:hover,
-.stock__block-content_button::after {
+.stock__block-button:hover,
+.stock__block-button::after {
     background-color: var(--dark_red);
     color: var(--white);
 }
 
-.stock__block-content_seil {
+.stock__block-seil {
     display: none;
 }
 
-.stock__block-content_seil-del {
+.stock__block-del {
     margin-top: 30px;
     padding-right: 15px;
     font-family: IBM Plex serif;
@@ -258,7 +286,7 @@ a{text-decoration: none;}
     color: var(--gray);
 }
 
-.stock__block-content_seil-active {
+.stock__block-active {
     margin-top: 30px;
     font-family: IBM Plex serif;
     font-weight: 500;
@@ -266,8 +294,6 @@ a{text-decoration: none;}
     font-size: 36px;
     color: var(--white);
 }
-
-.price {}
 
 .price__title {
     display: flex;
@@ -306,7 +332,7 @@ a{text-decoration: none;}
     float: left;
 }
 
-.price__block-left_text {
+.price__left-text {
     font-family: Roboto;
     font-weight: 500;
     line-height: 2;
@@ -320,7 +346,7 @@ a{text-decoration: none;}
     text-align: right;
 }
 
-.price__block-right_text {
+.price__right-text {
     font-family: IDM Plex serif;
     font-weight: 500;
     line-height: 2;
@@ -328,7 +354,6 @@ a{text-decoration: none;}
     color: var(--gray);
 }
 
-.work {}
 .work__title {
     display: flex;
     justify-content: center;
@@ -353,7 +378,6 @@ a{text-decoration: none;}
     height: 9px;
     width: 107px;
 }
-
 
 .slider {
     display: flex;
@@ -415,3 +439,147 @@ a{text-decoration: none;}
     width: 310px;
     height: 310px;
 }
+
+.contact__title {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    font-family: IBM Plex serif;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 1.2;
+    color: var(--white);
+}
+
+.contact__hr-red {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--red);
+    opacity: 1;
+    height: 9px;
+    width: 107px;
+}
+
+.contact__map {
+    margin-bottom: 70px;
+    border-radius: 10px;
+}
+
+.contact__info {
+    display: flex;
+    justify-content: start;
+    gap: 100px;
+}
+
+.contact__address {
+    font-family: IDM Plex serif;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--white);
+}
+
+.contact__tel {
+    font-family: IDM Plex serif;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--white);
+}
+
+.contact__tel-white {
+    color: var(--white);
+}
+
+.footer {
+    background-color: var(--black); 
+    margin-top: 120px; 
+    padding: 61px 0;
+}
+
+.footer__logo {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-family: IBM Plex serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 0.4;
+    font-size: 30px;
+    color: var(--white);
+}
+
+.footer__logo-white {
+    color: var(--white);
+}
+
+.footer__logo-white:hover,
+.footer__logo-white::after {
+    color: var(--red);
+}
+
+.footer__logo:hover,
+.footer__logo::after {
+    color: var(--red);
+}
+
+.footer__logo-subtitle {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    cursor: pointer;
+    font-family: IBM Plex serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 0;
+    font-size: 7px;
+    color: var(--red);
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+    gap: 60px;
+}
+
+.footer__menu-title {
+    margin: 0;
+    cursor: pointer;
+    font-family: IBM Plex serif;
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 20px;
+    color: var(--white);
+}
+
+.footer__menu-white {
+    color: var(--white);
+}
+
+.footer__menu-white:hover,
+.footer__menu-white::after {
+    color: var(--red);
+}
+
+.footer__society {
+    display: flex;
+    justify-content: center;
+    padding-top: 43px;
+    gap: 22px;
+}
+
+
+
+
+
+
+
+
+

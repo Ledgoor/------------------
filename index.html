@@ -35,18 +35,19 @@
         <div class="row">
             <div class="col-12">
                 <div class="header">
+                    <a name="logo"></a>
                     <div class="header__nav">
                         <ul class="header__nav-menu">
-                            <li><a href="" class="header__nav-text">Акции</a></li>
-                            <li><a href="" class="header__nav-text">Расценки</a></li>
+                            <li><a href="#stocks" class="header__nav-text">Акции</a></li>
+                            <li><a href="#price" class="header__nav-text">Расценки</a></li>
                             <li>
-                                <a href="" class="header__nav-tittext">
+                                <a href="#logo" class="header__nav-tittext">
                                     Мощъ
                                     <span class="header__nav-subtext">barbershop</span>
                                 </a>
                             </li>
-                            <li><a href="" class="header__nav-text">Работы</a></li>
-                            <li><a href="" class="header__nav-text">Контакты</a></li>
+                            <li><a href="#works" class="header__nav-text">Работы</a></li>
+                            <li><a href="#contact" class="header__nav-text">Контакты</a></li>
                         </ul>
                     </div>
                 </div>
@@ -54,20 +55,24 @@
         </div>
     </header>
 
+    <div class="booking">
+        <a href="https://widget.sonline.su/ru/services/?placeid=999961967" class="booking__title">Онлайн запись</a>
+    </div>
+
     <main class="container">
         <section class="row">
             <div class="col-12">
                 <div class="main">
                     <div class="main__item">
                         <div class="main__item-content flex-col-c-m">
-                            <h1 class="main__item-content_title">
+                            <h1 class="main__item-title">
                                 Ощути нашу МОЩЪ с новой стрижкой
                             </h1>
-                            <p class="main__item-content_text">
+                            <p class="main__item-text">
                                 Мы сделали мужские стрижки доступными, оставив главные 
                                 преимущества топового барбершопа 
                             </p>
-                            <a href="" class="main__item-content_button">Записаться</a>
+                            <a href="https://widget.sonline.su/ru/services/?placeid=999961967" class="main__item-button">Записаться</a>
                         </div>
                     </div>
                 </div>
@@ -85,7 +90,7 @@
             <div class="col">
                 <div class="advantages">
                     <p class="advantages__text">
-                        Развлечения и игры
+                        Развлечения
                     </p>
                 </div>
             </div>
@@ -115,7 +120,7 @@
             <div class="col">
                 <div class="advantages">
                     <p class="advantages__text">
-                        Мужская атмосфера
+                        Атмосфера
                     </p>
                 </div>
             </div>
@@ -124,29 +129,29 @@
         <section class="row">
             <div class="col">
                 <div class="stock">
-                    <a href="" class="stock__title">Мощные акции каждую неделю</a>
+                    <a name="stocks" class="stock__title">Мощные акции каждую неделю</a>
                     <hr class="stock__hr-red">
                     <div class="stock__block">
                         <div class="stock__block-img">
                             <img src="img/Left.png" alt="seil">
                         </div>
                         <div class="stock__block-content">
-                            <h2 class="stock__block-content_title">
+                            <h2 class="stock__block-title">
                                 Скидка 10%
                                 <br>
                                 на первую стрижку
                             </h2>
-                            <p class="stock__block-content_text">
+                            <p class="stock__block-text">
                                 Выглядеть совершенно, можно и нужно всегда,
                                 <br>
                                 а главное скидки никто не отменял!
                             </p>
-                            <a href="" class="stock__block-content_button">
+                            <a href="https://t.me/moshbarbers" class="stock__block-button">
                                 Подробнее
                             </a>
-                            <div class="stock__block-content_seil">
-                                <p class="stock__block-content_seil-del"><del>700₽</del></p>
-                                <p class="stock__block-content_seil-active">630₽</p>
+                            <div class="stock__block-seil">
+                                <p class="stock__block-del"><del>700₽</del></p>
+                                <p class="stock__block-active">630₽</p>
                             </div>
                         </div>
                     </div>
@@ -157,11 +162,11 @@
         <section class="row">
             <div class="col">
                 <div class="price">
-                    <a href="" class="price__title">Наши услуги</a>
+                    <a name="price" class="price__title">Наши услуги</a>
                     <hr class="price__hr-red">
                     <div class="price__bg">
                         <div class="price__block-left">
-                            <ul class="price__block-left_text">
+                            <ul class="price__left-text">
                                 <li>Мужская стрижка</li>
                                 <li>Стрижка машинкой (1 насадка)</li>
                                 <li>Моделирование бороды</li>
@@ -175,7 +180,7 @@
                             </ul>
                         </div>
                         <div class="price__block-right">
-                            <ul class="price__block-right_text">
+                            <ul class="price__right-text">
                                 <li>700р</li>
                                 <li>350р</li>
                                 <li>600р</li>
@@ -197,7 +202,7 @@
         <section class="row">
             <div class="col">
                 <div class="work">
-                    <a href="" class="work__title">Наши работы</a>
+                    <a name="works" class="work__title">Наши работы</a>
                     <hr class="work__hr-red">
                 </div>
                 <div class="slider">
@@ -228,7 +233,53 @@
                 </div>              
             </div>
         </section>
+
+        <section class="row">
+            <div class="col">
+                <div class="contact">
+                    <a name="contact" class="contact__title">Где мы находимся</a>
+                    <hr class="contact__hr-red">
+                </div>
+                <iframe class="contact__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A46106eff8236e6dbc42f567cc17b1dab22b559b8afab927714ccd0fac7123089&amp;source=constructor" width="100%" height="560" frameborder="0"></iframe>
+                <div class="contact__info">
+                    <div class="contact__address">
+                        <p>Адрес:</p>
+                        <p>г. Москва, ул. Маршала Ерёменко, дом 5 к2</p>
+                    </div>
+                    <div class="contact__tel">
+                        <p>Телефон:</p>
+                        <a href="tel:+79257737474" class="contact__tel-white">+7-925-773-74-74</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="container">
+        <div class="row">
+            <div class="col">
+                <div class="footer">
+                    <div class="footer__logo">
+                        <a href="#logo" class="footer__logo-white">
+                            Мощъ
+                            <br>
+                            <span class="footer__logo-subtitle">barbershop</span>
+                        </a>
+                    </div>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-title"><a href="#stocks" class="footer__menu-white">Акции</a></li>
+                        <li class="footer__menu-title"><a href="#price" class="footer__menu-white">Расценки</a></li>
+                        <li class="footer__menu-title"><a href="#works" class="footer__menu-white">Работы</a></li>
+                        <li class="footer__menu-title"><a href="#contact" class="footer__menu-white">Контакты</a></li>
+                    </ul>
+                    <div class="footer__society">
+                        <a href="https://t.me/moshbarbers"><i class="fa fa-lg fa-telegram" aria-hidden="true"></i></a>
+                        <a href="https://wa.me/89257737474"><i class="fa fa-lg fa-whatsapp" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 <!-- [SCRIPT] -->
