@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -20,6 +21,11 @@
 body {background-color: var(--fon);}
 ul, li {list-style-type: none;}
 a{text-decoration: none;}
+
+del {
+    text-decoration: line-through;
+    text-decoration-color: #AD0032;
+}
 
 .header {
     position: fixed;
@@ -186,13 +192,13 @@ a{text-decoration: none;}
 .advantages__text {
     padding: 45px 87px;
     border-radius: 10px;
-    background: #000000;
+    background: var(--black);
     text-align: center;
     font-family: Roboto;
     font-weight: 500;
     font-size: 22px;
     line-height: 0;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .stock {
@@ -249,13 +255,14 @@ a{text-decoration: none;}
 
 .stock__block-text {
     padding-bottom: 50px;
+    width: 550px;
     font-family: Roboto;
     line-height: 1.1;
     font-size: 24px;
     color: var(--light_gray);
 }
 
-.stock__block-button {
+.stock__info-button {
     margin-right: 22px;
     border-radius: 10px;
     border: none;
@@ -266,17 +273,23 @@ a{text-decoration: none;}
     color: var(--white);
 }
 
-.stock__block-button:hover,
-.stock__block-button::after {
+.stock__info-button:hover,
+.stock__info-button::after {
     background-color: var(--dark_red);
     color: var(--white);
 }
 
-.stock__block-seil {
-    display: none;
+.stock__info {
+    display: flex;
+    justify-content: center;
 }
 
-.stock__block-del {
+.stock__info-seil {
+    display: flex;
+    justify-content: center;
+}
+
+.stock__seil-del {
     margin-top: 30px;
     padding-right: 15px;
     font-family: IBM Plex serif;
@@ -286,7 +299,7 @@ a{text-decoration: none;}
     color: var(--gray);
 }
 
-.stock__block-active {
+.stock__seil-active {
     margin-top: 30px;
     font-family: IBM Plex serif;
     font-weight: 500;
@@ -575,7 +588,151 @@ a{text-decoration: none;}
     gap: 22px;
 }
 
+@media (max-width:1280px) {
+    .header__nav-menu {gap: 50px;}
+    .main__item-title {
+        font-size: 50px;
+        width: 550px;
+    }
+    .main__item-text {
+        font-size: 18px;
+        width: 550px;
+    }
+    .main__item-button {
+        padding: 14px 116px;
+        font-size: 18px;
+    }
+    
+    .advantages__text {
+        padding: 40px 50px;
+        font-size: 20px;
+    }
+    
+    .stock {
+        background-color: var(--black_gray); 
+        border-radius: 10px;
+        margin-top: 25px;
+        padding-bottom: 75px;
+    }
+    .stock__title {
+        padding-top: 40px;
+        font-size: 40px;
+    }
+    .stock__hr-red {
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    .stock__img {
+        padding-top: 10px;
+        padding-bottom: 90px;
+    }
+    .stock__block {
+        gap: 40px;
+        padding-top: 8px;
+    }
+    .stock__block-img {
+        width: 450px;
+    }
+    .stock__block-title {
+        padding-bottom: 30px;
+        font-size: 35px;
+    }
+    .stock__block-text {
+        padding-bottom: 50px;
+        width: 400px;
+        font-size: 22px;
+    }
+    .stock__info {display: block;}
+    .stock__info-button {
+        margin-right: 22px;
+        padding: 14px 116px;
+        font-size: 18px;
+    }
+    .stock__info-seil {
+        padding-top: 15px;
+        width: 340px;
+    }
+    .stock__seil-del {
+        margin-top: 30px;
+        padding-right: 15px;
+        font-family: IBM Plex serif;
+        font-weight: 500;
+        line-height: 0;
+        font-size: 36px;
+        color: var(--gray);
+    }
+    .stock__seil-active {
+        margin-top: 30px;
+        font-family: IBM Plex serif;
+        font-weight: 500;
+        line-height: 0;
+        font-size: 36px;
+        color: var(--white);
+    }
 
+    .price__title {
+        padding-top: 60px;
+        font-size: 40px;
+    }
+    .price__hr-red {
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--dark_red);
+        opacity: 1;
+        height: 9px;
+        width: 107px;
+    }
+    .price__bg {
+        background-color: var(--black); 
+        margin: 0 117px;
+        padding: 46px 0;
+        border-radius: 10px;
+        height: 500px;
+    }
+    .price__block-left {padding-left: 100px;}
+    .price__left-text {font-size: 24px;}
+    .price__block-right {padding-right: 100px;}
+    .price__right-text {font-size: 24px;}
+    
+    .work__title {
+        padding-top: 60px;
+        font-size: 40px;
+    }
+    .slider {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    #wrapper {max-width: 972px;}
+    #prev {left: -150px;}
+    #next {right: -150px;}
+    #content {grid-gap: 30px;}
+    
+    .contact__title {
+        padding-top: 60px;
+        font-size: 40px;
+    }
+    
+    .contact__hr-red {margin-top: 17px;}
+}
+
+@media (max-width:1024px) {
+    .slider {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    #wrapper {max-width: 720px;}
+    #prev {left: -150px;}
+    #next {right: -150px;}
+    #content {grid-gap: 30px;}
+    .item {
+        width: 250px;
+        height: 250px;
+    }
+}
 
 
 
