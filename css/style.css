@@ -27,6 +27,71 @@ del {
     text-decoration-color: #AD0032;
 }
 
+/*---------- BURGER ----------*/
+
+@media (min-width:669px) {
+    .menuItem,
+    .menuItem:hover,
+    .hamburger,
+    .hamburger > .closeIcon,
+    .menu,
+    .showMenu {
+        display: none;
+    }
+}
+
+@media (max-width:668px) {
+    .menuItem {
+        display: block;
+        text-align: center;
+        font-family: IBM Plex Serif;
+        margin: 2rem 4rem;
+        font-size: 22px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .menuItem:hover {
+        text-decoration: underline;
+    }
+    
+    .hamburger {
+        position: fixed;
+        background-color: rgba(0, 125, 215, 0);
+        z-index: 100;
+        top: 1rem;
+        right: 1rem;
+        padding: 4px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .hamburger > .closeIcon {
+        display: none;
+    }
+    
+    .menu {
+        position: fixed;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        border: none;
+        background: #1c1c1c;
+        list-style: none;
+        padding-top: 4rem;
+    }
+    
+    .showMenu {
+        transform: translateY(0);
+    }
+}
+
+/*------------------------*/
+
 .header {
     position: fixed;
     background: var(--light_black);
@@ -734,6 +799,119 @@ del {
     }
 }
 
+@media (max-width:993px) {
+    .main {margin-bottom: 15px;}
+    .main__item-title {
+        font-size: 40px;
+        width: 440px;
+    }
+    .main__item-text {
+        font-size: 16px;
+        width: 470px;
+    }
+    .main__item-button {
+        border-radius: 6px;
+        padding: 12px 114px;
+        font-size: 16px;
+    }
+    
+    .advantages {padding-bottom: 15px;}
+    .advantages__text {
+        padding: 30px 30px;
+        font-size: 16px;
+    }
+    
+    .stock {padding-bottom: 40px;}
+    .stock__title {
+        padding-top: 20px;
+        font-size: 32px;
+    }
+    .stock__hr-red {
+        margin-top: 16px;
+        margin-bottom: 14px;
+    }
+    .stock__img {
+        padding-top: 10px;
+        padding-bottom: 90px;
+    }
+    .stock__block {
+        gap: 20px;
+        padding-top: 8px;
+    }
+    .stock__block-img {
+        padding-top: 10px;
+        width: 350px;
+    }
+    .stock__block-title {
+        padding-bottom: 15px;
+        font-size: 30px;
+    }
+    .stock__block-text {
+        padding-bottom: 30px;
+        width: 330px;
+        font-size: 18px;
+    }
+    .stock__info {display: block;}
+    .stock__info-button {
+        border-radius: 6px;
+        margin-right: 22px;
+        padding: 14px 116px;
+        font-size: 18px;
+    }
+    .stock__info-seil {
+        padding-top: 10px;
+        width: 340px;
+    }
+    .stock__seil-del {
+        margin-top: 30px;
+        padding-right: 15px;
+        font-size: 30px;
+    }
+    .stock__seil-active {
+        margin-top: 30px;
+        font-size: 30px;
+    }
+
+    .price__title {
+        padding-top: 40px;
+        font-size: 32px;
+    }
+    .price__hr-red {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .price__bg {
+        margin: 0 100px;
+        padding: 30px 0;
+        border-radius: 10px;
+        height: 400px;
+    }
+    .price__block-left {padding-left: 50px;}
+    .price__left-text {font-size: 20px;}
+    .price__block-right {padding-right: 50px;}
+    .price__right-text {font-size: 20px;}
+    
+    .work__title {
+        padding-top: 40px;
+        font-size: 32px;
+    }
+    .work__hr-red {height: 9px;}
+    .slider {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    #wrapper {max-width: 550px;}
+    #prev {left: -125px;}
+    #next {right: -125px;}
+    #content {grid-gap: 15px;}
+    
+    .contact__title {
+        padding-top: 40px;
+        font-size: 32px;
+    }
+    
+    .contact__hr-red {margin-top: 17px; height: 9px;}
+}
 
 
 
