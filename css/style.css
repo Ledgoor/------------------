@@ -57,7 +57,7 @@ del {
         position: fixed;
         background-color: rgba(0, 125, 215, 0);
         z-index: 100;
-        top: 1rem;
+        top: 2rem;
         right: 1rem;
         padding: 4px;
         border: none;
@@ -1365,8 +1365,8 @@ del {
         width: 300px;
     }
     .main__item-text {
-        font-size: 14px;
-        width: 390px;
+        font-size: 12px;
+        width: 100%;
     }
     .main__item-button {
         border-radius: 6px;
@@ -1381,7 +1381,7 @@ del {
 
     .advantages {padding-bottom: 15px;}
     .advantages__text {
-        padding: 25px 100px;
+        padding: 25px 70px;
         font-size: 14px;
     }
     
